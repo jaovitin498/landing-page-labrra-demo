@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio - La Barra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<main>
+     <header>
+            <h2>La Barra</h2>
+            <a href="index.html">voltar</a>
+            <a href="#pizzas">Pizzas</a>
+            <a href="#refris">Refrigerantes</a>
+        </header>
+
+    <div class="hero">
+        <h1>Cardápio - <b>La Barra</b></h1>
+        <p>O melhor de Muriaé</p><br>
+        <div class="buttons">
+            <a href="https://wa.me/5531912345678" target="_blank" id="whats">faça seu pedido no whatsapp</a>
+            <a href="#" id="cardapio">Ver Cardápio</a>
+        </div>
+    </div>
+
+    <section class="app">
+        <h2>Cardápio</h2>
+        <h3 id="pizzas">Pizzas</h3>
+        <div class="cardps">
+            <div class="cardp hidden">
+                <img src="https://s2-receitas.glbimg.com/SNnnOIl92uii5_Dg5JtCydNmrOU=/600x0/filters:quality(50)/https://i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/V/2/rafz5yTJuSiHGDoolkpg/pizza-de-4-queijos.jpg" alt="pizza quatro queijios" class="card-img" width="100%">
+                <h4>Pizza 4 queijos</h4><br>
+                <span>44.99</span>
+            </div>
+            <div class="cardp hidden">
+                <img src="https://www.diariodocentrodomundo.com.br/wp-content/uploads/2025/09/receita-pizza-portuguesa.png" alt="pizza quatro queijios" class="card-img" width="100%">
+                <h4>Pizza Portuguesa</h4><br>
+                <span>44.99</span>
+            </div>
+            <div class="cardp hidden">
+                <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1932-5a1b7911dfda6e3c351c30de564da267.jpg" alt="pizza quatro queijios" class="card-img" width="100%">
+                <h4>Pizza Mussarela</h4><br>
+                <span>44.99</span>
+            </div>
+        </div>
+        <h3 id="refris">Refrigerantes</h3>
+        <div class="cardps">
+            <div class="cardp hidden">
+                <img src="https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1884-refrigerante-coca-cola-2l.jpg?s=6adf65c6d506dc0160728542115891e9" alt="pizza quatro queijios" class="card-img" width="80%">
+                <h4>Coca-cola 2L</h4><br>
+                <span>12.50</span>
+            </div>
+            <div class="cardp hidden">
+                <img src="https://destro.fbitsstatic.net/img/p/refrigerante-pepsi-cola-pet-2l-78447/265002-1.jpg?w=500&h=500&v=202501231555&qs=ignore" alt="pizza quatro queijios" class="card-img" width="100%">
+                <h4>Pepsi</h4><br>
+                <span>10.00</span>
+            </div>
+            <div class="cardp hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwMyZUu1i6n-ZsoB0iIM8xbWYdoi021JGU-w&s" alt="pizza quatro queijios" class="card-img" width="100%">
+                <h4>Guaraná anatrtica 2L</h4><br>
+                <span>9.99</span>
+            </div>
+        </div>
+    </section>
+
+        <section id="more">
+            <h3>Fale conosco</h3>
+            <h2>Faça seu pedido</h2>
+            <div class="cont">
+                <div class="left hidden">
+                    <p>Faça seu Pedido agora mesmo! estamos te esperando!</p>
+                    <p>Muriaé - MG, Brasil</p>
+                    <p>(32) 937323-2121</p>
+                </div>
+                <div class="form hidden">
+                    <h2>Fazer Pedido:</h2>
+                    <form>
+                        <label for="nome">Seu nome</label><br>
+                        <input type="text" id="nome" placeholder="Como quer ser chamado?" required>
+                        <label for="telefone">Seu Telefone</label><br>
+                        <input type="number" id="telefone" placeholder="(32) 99999-9999">
+                        <label for="msg">Seu pedido</label>
+                        <textarea id="msg" rows="5" placeholder="Uma pizza quatro queijos e uma pepsi de dois litros, por favor." required></textarea>
+                        <button type="submit" onclick="enviar()">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+</main>
+</body>
+    <script src="cardapio.js"></script>
+</html>
